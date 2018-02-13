@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?><RESULT xmlns:mb="http://musicbrainz.org/ns/mmd-2.0#">
+<RECORD>
+  <ITEM ANGIE-VAR="?artistId"> NODEF </ITEM>
+  <ITEM ANGIE-VAR="?albumTitle">The Complete BBC Recording</ITEM>
+  <ITEM ANGIE-VAR="?albumId">00e17dc4-ed84-4f09-a8ae-4b359adc854d</ITEM>
+  <ITEM ANGIE-VAR="?releaseData">1968-09-07</ITEM>
+  <ITEM ANGIE-VAR="?country">GB</ITEM></RECORD>
+<RECORD>
+  <ITEM ANGIE-VAR="?artistId"> NODEF </ITEM>
+  <ITEM ANGIE-VAR="?albumTitle">The Partisan</ITEM>
+  <ITEM ANGIE-VAR="?albumId">01640789-5d0d-4b9a-8e7d-35da44bf01b3</ITEM>
+  <ITEM ANGIE-VAR="?releaseData">1969</ITEM>
+  <ITEM ANGIE-VAR="?country">FR</ITEM></RECORD>
+<RECORD>
+  <ITEM ANGIE-VAR="?artistId"> NODEF </ITEM>
+  <ITEM ANGIE-VAR="?albumTitle">Do I Have To Dance All Night / The Butcher</ITEM>
+  <ITEM ANGIE-VAR="?albumId">0b5615ce-f604-47b3-b6c0-f8e39b52c6ea</ITEM>
+  <ITEM ANGIE-VAR="?releaseData">1976</ITEM>
+  <ITEM ANGIE-VAR="?country">XE</ITEM></RECORD>
+<RECORD>
+  <ITEM ANGIE-VAR="?artistId"> NODEF </ITEM>
+  <ITEM ANGIE-VAR="?albumTitle">Songs of Love and Hate</ITEM>
+  <ITEM ANGIE-VAR="?albumId">2405fca7-24b5-4627-b448-d29ffae8147a</ITEM>
+  <ITEM ANGIE-VAR="?releaseData">1971</ITEM>
+  <ITEM ANGIE-VAR="?country"/></RECORD>
+<RECORD>
+  <ITEM ANGIE-VAR="?artistId"> NODEF </ITEM>
+  <ITEM ANGIE-VAR="?albumTitle">Songs of Leonard Cohen</ITEM>
+  <ITEM ANGIE-VAR="?albumId">256312e7-0377-47e0-b2e6-df2c6e0cd2e8</ITEM>
+  <ITEM ANGIE-VAR="?releaseData">1967-12-27</ITEM>
+  <ITEM ANGIE-VAR="?country">CA</ITEM></RECORD>
+<RECORD>
+  <ITEM ANGIE-VAR="?artistId"> NODEF </ITEM>
+  <ITEM ANGIE-VAR="?albumTitle">Songs of Love and Hate</ITEM>
+  <ITEM ANGIE-VAR="?albumId">28e1dddf-af36-3f55-a840-1ad283cc925a</ITEM>
+  <ITEM ANGIE-VAR="?releaseData">1971</ITEM>
+  <ITEM ANGIE-VAR="?country">GB</ITEM></RECORD>
+<RECORD>
+  <ITEM ANGIE-VAR="?artistId"> NODEF </ITEM>
+  <ITEM ANGIE-VAR="?albumTitle">Songs of Leonard Cohen</ITEM>
+  <ITEM ANGIE-VAR="?albumId">294d66f4-9030-4855-bfda-e3dd0133962b</ITEM>
+  <ITEM ANGIE-VAR="?releaseData">1968</ITEM>
+  <ITEM ANGIE-VAR="?country">NL</ITEM></RECORD>
+<RECORD>
+  <ITEM ANGIE-VAR="?artistId"> NODEF </ITEM>
+  <ITEM ANGIE-VAR="?albumTitle">New Skin for the Old Ceremony</ITEM>
+  <ITEM ANGIE-VAR="?albumId">30031d1f-6b79-4562-b847-1e146a8c4e59</ITEM>
+  <ITEM ANGIE-VAR="?releaseData">1974</ITEM>
+  <ITEM ANGIE-VAR="?country">IT</ITEM></RECORD>
+<RECORD>
+  <ITEM ANGIE-VAR="?artistId"> NODEF </ITEM>
+  <ITEM ANGIE-VAR="?albumTitle">Live Songs</ITEM>
+  <ITEM ANGIE-VAR="?albumId">376a0fc5-d3cf-47bb-96cb-92077eb00cfa</ITEM>
+  <ITEM ANGIE-VAR="?releaseData">1973</ITEM>
+  <ITEM ANGIE-VAR="?country">NL</ITEM></RECORD>
+<RECORD>
+  <ITEM ANGIE-VAR="?artistId"> NODEF </ITEM>
+  <ITEM ANGIE-VAR="?albumTitle">Songs From a Room</ITEM>
+  <ITEM ANGIE-VAR="?albumId">43da2bf3-bd74-34a1-984a-73ba528923c8</ITEM>
+  <ITEM ANGIE-VAR="?releaseData">1969</ITEM>
+  <ITEM ANGIE-VAR="?country">NL</ITEM></RECORD>
+<RECORD>
+  <ITEM ANGIE-VAR="?artistId"> NODEF </ITEM>
+  <ITEM ANGIE-VAR="?albumTitle">Greatest Hits</ITEM>
+  <ITEM ANGIE-VAR="?albumId">4a6522b0-09bd-45f6-bc2d-fc9e27a56dd5</ITEM>
+  <ITEM ANGIE-VAR="?releaseData">1975</ITEM>
+  <ITEM ANGIE-VAR="?country"/></RECORD>
+<RECORD>
+  <ITEM ANGIE-VAR="?artistId"> NODEF </ITEM>
+  <ITEM ANGIE-VAR="?albumTitle">Songs From a Room</ITEM>
+  <ITEM ANGIE-VAR="?albumId">4a844c22-aeb0-3596-9c72-391b1a73cc89</ITEM>
+  <ITEM ANGIE-VAR="?releaseData">1969-04</ITEM>
+  <ITEM ANGIE-VAR="?country">GB</ITEM></RECORD>
+<RECORD>
+  <ITEM ANGIE-VAR="?artistId"> NODEF </ITEM>
+  <ITEM ANGIE-VAR="?albumTitle">Songs of Love and Hate</ITEM>
+  <ITEM ANGIE-VAR="?albumId">535bf80d-bde6-4a8c-b89a-45f69e56a025</ITEM>
+  <ITEM ANGIE-VAR="?releaseData">1970</ITEM>
+  <ITEM ANGIE-VAR="?country">US</ITEM></RECORD>
+<RECORD>
+  <ITEM ANGIE-VAR="?artistId"> NODEF </ITEM>
+  <ITEM ANGIE-VAR="?albumTitle">Songs of Leonard Cohen</ITEM>
+  <ITEM ANGIE-VAR="?albumId">585f2579-3cb6-3698-b8d4-7040b0ef4206</ITEM>
+  <ITEM ANGIE-VAR="?releaseData">1968-02</ITEM>
+  <ITEM ANGIE-VAR="?country">US</ITEM></RECORD>
+<RECORD>
+  <ITEM ANGIE-VAR="?artistId"> NODEF </ITEM>
+  <ITEM ANGIE-VAR="?albumTitle">Death of a Ladies’ Man</ITEM>
+  <ITEM ANGIE-VAR="?albumId">60ae3cb7-3e4c-4de0-b142-76d10eb6ad61</ITEM>
+  <ITEM ANGIE-VAR="?releaseData">1977</ITEM>
+  <ITEM ANGIE-VAR="?country">XE</ITEM></RECORD>
+<RECORD>
+  <ITEM ANGIE-VAR="?artistId"> NODEF </ITEM>
+  <ITEM ANGIE-VAR="?albumTitle">The Best of Leonard Cohen</ITEM>
+  <ITEM ANGIE-VAR="?albumId">6a6b3cfc-0310-442c-9c1b-9b7cc0052226</ITEM>
+  <ITEM ANGIE-VAR="?releaseData">1975</ITEM>
+  <ITEM ANGIE-VAR="?country">US</ITEM></RECORD>
+<RECORD>
+  <ITEM ANGIE-VAR="?artistId"> NODEF </ITEM>
+  <ITEM ANGIE-VAR="?albumTitle">Suzanne / Bird On The Wire</ITEM>
+  <ITEM ANGIE-VAR="?albumId">7289de7a-45c3-4827-952a-ac385b3ed19e</ITEM>
+  <ITEM ANGIE-VAR="?releaseData">1973-04-20</ITEM>
+  <ITEM ANGIE-VAR="?country">GB</ITEM></RECORD>
+<RECORD>
+  <ITEM ANGIE-VAR="?artistId"> NODEF </ITEM>
+  <ITEM ANGIE-VAR="?albumTitle">New Skin for the Old Ceremony</ITEM>
+  <ITEM ANGIE-VAR="?albumId">90ad5a1e-2142-3d58-9b81-c4d1a198d3d9</ITEM>
+  <ITEM ANGIE-VAR="?releaseData">1974-08</ITEM>
+  <ITEM ANGIE-VAR="?country">US</ITEM></RECORD>
+<RECORD>
+  <ITEM ANGIE-VAR="?artistId"> NODEF </ITEM>
+  <ITEM ANGIE-VAR="?albumTitle">Songs From a Room</ITEM>
+  <ITEM ANGIE-VAR="?albumId">9d42c47e-aefa-48e4-855f-32bb3ce8f59a</ITEM>
+  <ITEM ANGIE-VAR="?releaseData">1969-04</ITEM>
+  <ITEM ANGIE-VAR="?country">US</ITEM></RECORD>
+<RECORD>
+  <ITEM ANGIE-VAR="?artistId"> NODEF </ITEM>
+  <ITEM ANGIE-VAR="?albumTitle">Live Songs</ITEM>
+  <ITEM ANGIE-VAR="?albumId">b0c4ec1f-ab7a-450c-ac8e-a7cc3a7da49a</ITEM>
+  <ITEM ANGIE-VAR="?releaseData">1973-04</ITEM>
+  <ITEM ANGIE-VAR="?country">US</ITEM></RECORD>
+<RECORD>
+  <ITEM ANGIE-VAR="?artistId"> NODEF </ITEM>
+  <ITEM ANGIE-VAR="?albumTitle">Death of a Ladies' Man</ITEM>
+  <ITEM ANGIE-VAR="?albumId">ba45cf91-0c39-4ab4-a92b-a37b66967981</ITEM>
+  <ITEM ANGIE-VAR="?releaseData">1977-11</ITEM>
+  <ITEM ANGIE-VAR="?country">US</ITEM></RECORD>
+<RECORD>
+  <ITEM ANGIE-VAR="?artistId"> NODEF </ITEM>
+  <ITEM ANGIE-VAR="?albumTitle">New Skin for the Old Ceremony</ITEM>
+  <ITEM ANGIE-VAR="?albumId">bbabd312-76e7-4b64-b522-44d716272147</ITEM>
+  <ITEM ANGIE-VAR="?releaseData">1974</ITEM>
+  <ITEM ANGIE-VAR="?country">GB</ITEM></RECORD>
+<RECORD>
+  <ITEM ANGIE-VAR="?artistId"> NODEF </ITEM>
+  <ITEM ANGIE-VAR="?albumTitle">So Long, Marianne</ITEM>
+  <ITEM ANGIE-VAR="?albumId">c1a40b31-6ea0-4952-9ae8-e94bfb8f511b</ITEM>
+  <ITEM ANGIE-VAR="?releaseData">1974</ITEM>
+  <ITEM ANGIE-VAR="?country">AU</ITEM></RECORD>
+<RECORD>
+  <ITEM ANGIE-VAR="?artistId"> NODEF </ITEM>
+  <ITEM ANGIE-VAR="?albumTitle">The Partisan</ITEM>
+  <ITEM ANGIE-VAR="?albumId">c48d2b6d-79f4-4e5b-a5e1-a15a8e83e1f4</ITEM>
+  <ITEM ANGIE-VAR="?releaseData">1969-05-30</ITEM>
+  <ITEM ANGIE-VAR="?country">NL</ITEM></RECORD>
+<RECORD>
+  <ITEM ANGIE-VAR="?artistId"> NODEF </ITEM>
+  <ITEM ANGIE-VAR="?albumTitle">Greatest Hits</ITEM>
+  <ITEM ANGIE-VAR="?albumId">f48d4f3b-bbf8-4b12-8713-9665e20bd59e</ITEM>
+  <ITEM ANGIE-VAR="?releaseData">1975</ITEM>
+  <ITEM ANGIE-VAR="?country">XE</ITEM></RECORD></RESULT>
