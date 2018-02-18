@@ -1,6 +1,5 @@
 package engine;
 
-import java.util.*;
 import java.util.ArrayList;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -24,7 +23,7 @@ public class FunctionCall{
 	public FunctionCall() {
 		super();
 		this.fooInput = "";
-		this.fooOutputs = new ArrayList<String>();
+		this.fooOutputs = new ArrayList<>();
 	}
 
 	/**
@@ -39,13 +38,23 @@ public class FunctionCall{
 
 	/**
 	* FunctionCall Constructor
-	* @param read a string for a function call to be parsed
+	* @param dirtyQuery a string for a function call to be parsed
 	*/
 	public FunctionCall(String dirtyQuery){
 		// Build a FunctionCall structure starting from a string to be cleaned.
 		super();
+		this.fooName="";
 		this.fooInput = "";
-		this.fooOutputs = new ArrayList<String>();
+		this.fooOutputs = new ArrayList<>();
+
+		// Handle the projection differently
+		if (dirtyQuery.startsWith("P(?")){
+			this.fooName = "Projection";
+			Pattern parameterPattern = Pattern.compile(parameterStr);
+			Matcher m = parameterPattern.matcher(dirtyQuery);
+			while (m.find()) this.fooOutputs.add(dirtyQuery.substring(m.start(),m.end()));
+			return;
+		}
 
 		// At this point in time, I suppose that in the string there is a [iooo] string
 		// - It specifies the number of inputs (#i) and outputs (#o)
@@ -57,7 +66,7 @@ public class FunctionCall{
 
 		// 2 - extract the number of input/output parameters
 		String inOutParams = dirtyQuery.substring(dirtyQuery.indexOf("[")+1, dirtyQuery.indexOf("]"));
-		int nIn, nOut = inOutParams.length() - inOutParams.indexOf("o");
+		int nOut = inOutParams.length() - inOutParams.indexOf("o");
 		Pattern argumentPattern = Pattern.compile(argumentStr);
 		Matcher m = argumentPattern.matcher(dirtyQuery);
 		int i = 0;
@@ -76,49 +85,25 @@ public class FunctionCall{
 
 	/**
 	* Returns value of fooName
-	* @return
+	* @return String containing the name of the functionCall
 	*/
 	public String getFooName() {
 		return fooName;
 	}
 
 	/**
-	* Sets new value of fooName
-	* @param
-	*/
-	public void setFooName(String fooName) {
-		this.fooName = fooName;
-	}
-
-	/**
 	* Returns value of fooInputs
-	* @return
+	* @return String containing the expected input of the FunctionCall
 	*/
 	public String getFooInput() {
 		return fooInput;
 	}
 
 	/**
-	* Sets new value of fooInputs
-	* @param
-	*/
-	public void setFooInput(String fooInput) {
-		this.fooInput = fooInput;
-	}
-
-	/**
 	* Returns value of fooOutputs
-	* @return
+	* @return an array containing the list of the expected outputs of the FunctionCall
 	*/
 	public ArrayList<String> getFooOutputs() {
 		return fooOutputs;
-	}
-
-	/**
-	* Sets new value of fooOutputs
-	* @param
-	*/
-	public void setFooOutputs(ArrayList<String> fooOutputs) {
-		this.fooOutputs = fooOutputs;
 	}
 }

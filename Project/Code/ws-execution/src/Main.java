@@ -45,8 +45,9 @@ public class Main {
 		// 	}
 
 		// Form the query
-		String query = "P(?bDate,?aTitle)<-mb_getArtistInfoByName[iooo](\"Leonard Cohen\",?id,?bDate,?eDate)"
-						//+"#mb_getAlbumsArtistId[ioooo](?id,?aTitle,?aId,?aDate,?country))"
+		String query = "P(?sName)<-mb_getArtistInfoByName[iooo](\"Frank Sinatra\",?id,?bDate,?eDate)"
+						+"#mb_getAlbumsArtistId[ioooo](?id,?aTitle,?aId,?aDate,?country))"
+						+"#mb_getSongByAlbumId[io](?aId,?sName)"
 						;
 
 		// Test the engine

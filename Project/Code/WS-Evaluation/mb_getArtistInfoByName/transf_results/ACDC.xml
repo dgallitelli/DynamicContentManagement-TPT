@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><RESULT xmlns:mb="http://musicbrainz.org/ns/mmd-1.0#">
+<RECORD>
+  <ITEM ANGIE-VAR="?artistName">DJ AC-DC</ITEM>
+  <ITEM ANGIE-VAR="?artistId">664567ea-8526-4e81-9853-0adc79014ca4</ITEM>
+  <ITEM ANGIE-VAR="?beginDate"/>
+  <ITEM ANGIE-VAR="?endDate"/></RECORD>
+<RECORD>
+  <ITEM ANGIE-VAR="?artistName">AC/DC</ITEM>
+  <ITEM ANGIE-VAR="?artistId">66c662b6-6e2f-4930-8610-912e24c63ed1</ITEM>
+  <ITEM ANGIE-VAR="?beginDate">1973-11</ITEM>
+  <ITEM ANGIE-VAR="?endDate"/></RECORD>
+<RECORD>
+  <ITEM ANGIE-VAR="?artistName">ballbreakers</ITEM>
+  <ITEM ANGIE-VAR="?artistId">c4a25590-453b-40dc-9021-8c0382b08315</ITEM>
+  <ITEM ANGIE-VAR="?beginDate">2015</ITEM>
+  <ITEM ANGIE-VAR="?endDate"/></RECORD>
+<RECORD>
+  <ITEM ANGIE-VAR="?artistName">Ac/Dc Uk</ITEM>
+  <ITEM ANGIE-VAR="?artistId">74a1057a-4e64-43c5-b882-f21debe0a323</ITEM>
+  <ITEM ANGIE-VAR="?beginDate"/>
+  <ITEM ANGIE-VAR="?endDate"/></RECORD></RESULT>
