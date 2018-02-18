@@ -28,20 +28,17 @@ public class ParseQueryForWS{
 		// Generate the list of functionCalls
 		String[] functionCalls = firstSplit[1].split(functionCallSeparatorStr);
 		ArrayList<String> foos = new ArrayList<String>();
-		for (String foo: functionCalls)
-			foos.add(foo);
+		for (String foo: functionCalls) foos.add(foo);
 
 		// Clean each FunctionCall
-		for (String foo:foos)
-			this.workflow.add(new FunctionCall(foo));
+		for (String foo:foos) this.workflow.add(new FunctionCall(foo));
 
 		// TODO: Handle the projection somehow
 
 		// Before launching, check if it's admissible
 		// For a workflow to be admissible, the inputs of the 2+ queries should be outputs of the first one
 		for (int i = 1; i < this.workflow.size(); i++){
-			HashMap<String,String> prevOuts = new HashMap<String,String>(this.workflow.get(i-1).getFooOutputs());
-			if (!prevOuts.containsKey(this.workflow.get(i).getFooInput())) return null;
+			if (!this.workflow.get(i-1).getFooOutputs().contains(this.workflow.get(i).getFooInput())) return null;
 		}
 
 		// Return the workflow if admissible, otherwise it has already returned null

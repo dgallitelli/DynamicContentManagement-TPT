@@ -1,6 +1,7 @@
 package engine;
 
 import java.util.*;
+import java.util.ArrayList;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -8,7 +9,7 @@ public class FunctionCall{
 
 	private String fooName;									// String for the function name
 	private String fooInput;								// String for the input
-	private HashMap<String,String> fooOutputs;				// ArrayList of the map for the <outputId, outputValue>
+	private ArrayList<String> fooOutputs;				// Map for the <outputId, outputValue>
 
 	// Expected string
 	static private String textStr = "[a-zA-Z0-9_]+";
@@ -23,13 +24,13 @@ public class FunctionCall{
 	public FunctionCall() {
 		super();
 		this.fooInput = "";
-		this.fooOutputs = new HashMap<String,String>();
+		this.fooOutputs = new ArrayList<String>();
 	}
 
 	/**
 	* Default FunctionCall constructor
 	*/
-	public FunctionCall(String fooName, String fooInput, HashMap<String,String> fooOutputs) {
+	public FunctionCall(String fooName, String fooInput, ArrayList<String> fooOutputs) {
 		super();
 		this.fooName = fooName;
 		this.fooInput = fooInput;
@@ -44,7 +45,7 @@ public class FunctionCall{
 		// Build a FunctionCall structure starting from a string to be cleaned.
 		super();
 		this.fooInput = "";
-		this.fooOutputs = new HashMap<String,String>();
+		this.fooOutputs = new ArrayList<String>();
 
 		// At this point in time, I suppose that in the string there is a [iooo] string
 		// - It specifies the number of inputs (#i) and outputs (#o)
@@ -55,7 +56,6 @@ public class FunctionCall{
 		this.fooName = dirtyQuery.substring(0, dirtyQuery.indexOf("["));
 
 		// 2 - extract the number of input/output parameters
-		// TODO: Understand automatically the number of inputs and outputs
 		String inOutParams = dirtyQuery.substring(dirtyQuery.indexOf("[")+1, dirtyQuery.indexOf("]"));
 		int nIn, nOut = inOutParams.length() - inOutParams.indexOf("o");
 		Pattern argumentPattern = Pattern.compile(argumentStr);
@@ -63,10 +63,13 @@ public class FunctionCall{
 		int i = 0;
 		// extract the input
 		m.find();
-		this.fooInput = dirtyQuery.substring(m.start(), m.end());
+		String toWrite = dirtyQuery.substring(m.start(), m.end());
+		if (toWrite.startsWith("\"")) this.fooInput = toWrite.substring(1,toWrite.length()-1);
+		else this.fooInput = toWrite;
 		// extract outputs
 		while (i < nOut && m.find()){
-			this.fooOutputs.put(dirtyQuery.substring(m.start(), m.end()), "");
+			toWrite = dirtyQuery.substring(m.start(), m.end());
+			this.fooOutputs.add(toWrite);
 			i++;
 		}
 	}
@@ -107,7 +110,7 @@ public class FunctionCall{
 	* Returns value of fooOutputs
 	* @return
 	*/
-	public HashMap<String,String> getFooOutputs() {
+	public ArrayList<String> getFooOutputs() {
 		return fooOutputs;
 	}
 
@@ -115,7 +118,7 @@ public class FunctionCall{
 	* Sets new value of fooOutputs
 	* @param
 	*/
-	public void setFooOutputs(HashMap<String,String> fooOutputs) {
+	public void setFooOutputs(ArrayList<String> fooOutputs) {
 		this.fooOutputs = fooOutputs;
 	}
 }

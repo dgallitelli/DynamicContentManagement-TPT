@@ -2,6 +2,7 @@ package engine;
 
 import download.WebService;
 import engine.FunctionCall;
+import java.util.Arrays;
 import java.util.ArrayList;
 import java.util.HashMap;
 import parsers.ParseQueryForWS;
@@ -47,27 +48,38 @@ public class Engine {
 		// Handle join of results - query 2 needs results from query 1
 		for (FunctionCall fc : this.workflow){
 			this.ws=WebServiceDescription.loadDescription(fc.getFooName());
-			// TODO: how to call getCallResult with multiple inputs?
 			this.fileWithCallResult = this.ws.getCallResult(fc.getFooInput());
+
+			/** TODO
+			* 	IF the input is a parameter ("name") - call directly the webservice
+			* 	ELSE
+			* 		Look for the key in the DB
+			* 		Use the values for new webservices
+			* 		NB: should I call only the values of the exact match or all of them? YES - FILTER NON EXACT MATCHES
+			*		NB: what happens when there are multiple matches?
+			*/
+
+
 			System.out.println("The call is   **"+this.fileWithCallResult+"**");
 			try {
 				this.fileWithTransfResults = this.ws.getTransformationResult(this.fileWithCallResult);
 				this.listOfTupleResult = ParseResultsForWS.showResults(this.fileWithTransfResults, this.ws);
 
-				// TODO: Fill the database with the results of each iteration
-				for (String[] tuple: this.listOfTupleResult){
-
-				}
 
 				System.out.println("The tuple results are ");
 				for(String [] tuple:this.listOfTupleResult){
-					System.out.print("( ");
-					for(String t:tuple){
-						System.out.print(t+", ");
+					System.out.println("Received: "+Arrays.asList(tuple).toString());
+					System.out.println("# Writing to DB");
+
+					// This hashmap contains a tuple <key(column_name),value>
+					HashMap<String,String> result = new HashMap<>();
+					result.put(fc.getFooInput(), Arrays.asList(tuple).get(0));
+					for (int i=1; i<tuple.length; i++) {
+						result.put(fc.getFooOutputs().get(i - 1), tuple[i]);
 					}
-					System.out.print(") ");
-					System.out.println();
+					this.db.writeRow(result);
 				}
+
 			} catch (Exception e) {
 				System.out.println(e.toString());
 			}
